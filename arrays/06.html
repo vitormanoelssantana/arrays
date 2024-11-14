@@ -1,0 +1,64 @@
+<meta charset="UTF-8" />
+<script>
+    //Problema: Loja de veículos
+    //Crie os seguintes arrays:
+    // let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    // let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    // let carrosHatch = ["308", "Focus", "i30"];
+
+    let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+    let carrosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+    let carrosHatch = ["308", "Focus", "i30"];
+
+
+    let tipoVeiculo1 = prompt("Informe o tipo de carro que você quer adicionar: (SUV, Sedan ou Hatch)");
+    let modeloVeiculo1 = prompt("Informe o modelo do carro que deseja adicionar:");
+    
+    if (tipoVeiculo1 === "SUV") {
+        carrosSUV.push(modeloVeiculo1);
+    } 
+    else if (tipoVeiculo1 === "Sedan") {
+        carrosSedan.push(modeloVeiculo1);
+    } 
+    else if (tipoVeiculo1 === "Hatch") {
+        carrosHatch.push(modeloVeiculo1);
+    } 
+    else {
+        alert("Tipo de carro inválido. Só pode ser SUV, Sedan ou Hatch.");
+    }
+
+
+    let tipoVeiculo2 = prompt("Informe o tipo de carro que você quer adicionar: (SUV, Sedan ou Hatch)");
+    let modeloVeiculo2 = prompt("Informe o modelo do carro que deseja adicionar:");
+    if (tipoVeiculo2 === "SUV") {
+        carrosSUV.push(modeloVeiculo2);
+    } 
+    else if (tipoVeiculo2 === "Sedan") {
+        carrosSedan.push(modeloVeiculo2);
+    } 
+    else if (tipoVeiculo2 === "Hatch") {
+        carrosHatch.push(modeloVeiculo2);
+    } 
+    else {
+        alert("Tipo de carro inválido. Só pode ser SUV, Sedan ou Hatch.");
+    }
+
+    let tipoVeiculo3 = prompt("Informe o tipo de carro que você quer adicionar: (SUV, Sedan ou Hatch)");
+    let modeloVeiculo3 = prompt("Informe o modelo do carro que deseja adicionar:");
+    if (tipoVeiculo3 === "SUV") {
+        carrosSUV.push(modeloVeiculo3);
+    } 
+    else if (tipoVeiculo3 === "Sedan") {
+        carrosSedan.push(modeloVeiculo3);
+    } 
+    else if (tipoVeiculo3 === "Hatch") {
+        carrosHatch.push(modeloVeiculo3);
+    } 
+    else {
+        alert("Tipo de carro inválido. Só pode ser SUV, Sedan ou Hatch.");
+    }
+
+    alert("SUVs: " + carrosSUV.join(", "));
+    alert("Sedans: " + carrosSedan.join(", "));
+    alert("Hatchs: " + carrosHatch.join(", "));
+</script>

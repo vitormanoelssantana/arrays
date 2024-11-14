@@ -1,0 +1,30 @@
+<script>
+    //Problema: Acertar cor
+    //Crie o seguinte array, que contém sete elementos:
+    // const nomeCores = ["azul", "amarelo", "verde", "branco", "preto", "marrom", "cinza"];
+    //Peça para o usuário informar uma cor.
+    //Faça o programa armazenar um número aleatório (entre 0 e 6).
+    //Caso o usuário acerte a cor, que está na posição do array que coincide com o número aleatório gerado pelo computador, o programa deverá retornar:
+    //PARABÉNS! VOCÊ ESTÁ COM SORTE NA COR ${corInformada}!
+    //Caso não acerte, o programa deverá retornar:
+    //NÃO FOI DESSA VEZ... TENTE NOVAMENTE!
+
+    //ENTRADA
+    const nomeCores = ["azul", "amarelo", "verde", "branco", "preto", "marrom", "cinza"];
+    const numerosAleatorios = Math.floor(Math.random() * 7);
+    const corSorteada = nomeCores[numerosAleatorios]
+    const cor = (prompt(`adicione uma cor, as cores disponíveis são: ${nomeCores.join(", ")}`));
+     
+
+    //PROCESSAMENTO
+    document.write(`A cor sorteada foi ${corSorteada}<br>`);
+    document.write(`Você escolheu essa cor: ${cor}<br>`)
+    
+    //SAÍDA
+    if (cor === corSorteada){
+        document.write(`Você acertou a cor`)
+    } else{
+        document.write(`Você não acertou`)
+    }
+
+</script>

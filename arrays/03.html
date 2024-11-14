@@ -1,0 +1,22 @@
+
+<script>
+    //ENTRADA
+    
+    const f1 = prompt (`Insira o nome da primeira fruta.`);
+    const f2 = prompt (`Insira o nome da segunda fruta.`);
+    const f3 = prompt (`Insira o nome da terceira fruta.`);
+    const b1 = prompt (`Insira o nome da primeira bebida.`);
+    const b2 = prompt (`Insira o nome da segunda bebida.`);
+    const b3 = prompt (`Insira o nome da terceira bebida.`);
+
+    //PROCESSAMENTO
+    
+    const frutas = [f1, f2, f3];
+    const bebidas = [b1, b2, b3];
+    const listaCompleta = [frutas.concat(bebidas)];
+    //SAÍDA
+    
+    document.write(`As frutas a serem compradas são: ${frutas}. <br> `);
+    document.write(`As bebidas a serem compradas são: ${bebidas}. <br>`);
+    document.write(`A lista completa de compras é: ${listaCompleta}.`);
+</script>
